@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='pic.png') }}" alt="Profile Photo" class="profile-img">
+
+        
+        <h1>Padala Kavya Sudha</h1>
+        <p>Student | Full Stack Developer </p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-info">
+                    <h3>Passionate Developer & Creative Problem Solver</h3>
+                    <p>Hi! I'm a passionate Computer Science student with a keen interest in building modern web applications and exploring cutting-edge technologies. My journey in tech is driven by curiosity and the desire to create innovative solutions.</p>
+                    <p>Currently pursuing my education in Data Science, I focus on:</p>
+                    <ul>
+                        <li>🚀 Building responsive and user-friendly web applications</li>
+                        <li>💡 Learning and implementing new technologies</li>
+                        <li>📚 Continuous learning and skill development</li>
+                    </ul>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">Certifications</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">Technologies</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume">
+            <h2>Resume</h2>
+            <div class="resume-container">
+                <div class="resume-preview">
+                    <p>If you'd like to learn more about my skills, experience, and background, feel free to download my resume. It provides a detailed overview of my professional journey, achievements, and the value I can bring to your team.</p>
+                </div>
+                <div class="resume-download">
+                    <a href="{{ url_for('static', filename='resume.docx') }}" download="Kavya_Sudha_Resume.docx" class="download-btn">
+
+                       
+                        <i class="fas fa-download"></i>
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills & Expertise</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Technical Skills</h3>
+                    <div class="skill-grid">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML/CSS</span>
+                            </div>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <i class="fab fa-js"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-level">Intermediate</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <i class="fas fa-robot"></i>
+                                <span>Rasa Framework</span>
+                            </div>
+                            <div class="skill-level">Intermediate</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-level">Intermediate</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <i class="fas fa-flask"></i>
+                                <span>Flask</span>
+                            </div>
+                            <div class="skill-level">Intermediate</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <div class="soft-skills">
+                        <div class="skill-tag">Leadership</div>
+                        <div class="skill-tag">Communication</div>
+                        <div class="skill-tag">Problem Solving</div>
+                        <div class="skill-tag">Team Work</div>
+                        <div class="skill-tag">Time Management</div>
+                        <div class="skill-tag">Adaptability</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Bachelor of Science in Data Science</h3>
+                        <h4>KBN College</h4>
+                        <p class="timeline-date">2022 - 2025</p>
+                        <p>I am currently pursuing a career in Data Science, where I am developing a strong foundation in key technologies and methodologies.</p>
+                        <ul class="achievements">
+                            <li>Currently pursuing my degree with a focus on Data Science</li>
+                            <li>Studying Data Science with a focus on machine learning, data analysis, and using data to solve real-world problems.</li>
+                            <li>Working on various web application projects</li>
+                        </ul>
+                        <div class="education-stats">
+                            <span class="education-stat">GPA: 88.00/100.00</span>
+                            <span class="education-stat">Bachelor's</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Intermediate(MPC)</h3>
+                        <h4>KBN College</h4>
+                        <p class="timeline-date">2020 - 2022</p>
+                        <p>During my two years at KBN College, I focused on Mathematics, Physics, and Chemistry, building a solid foundation in the core concepts of each subject</p>
+                        <ul class="achievements">
+                            <li>Secured a first division in the final exams with a focus on Mathematics, Physics, and Chemistry.</li>
+                            <li>During my time at KBN College, I pursued an intermediate qualification in Mathematics, Physics, and Chemistry (MPC)</li>
+                            <li>Improved problem-solving abilities through consistent practice and application of concepts in daily learning.</li>
+                        </ul>
+                        <div class="education-stats">
+                            <span class="education-stat">GPA: 88.00/100.00</span>
+                            <span class="education-stat">Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>High School(10th)</h3>
+                        <h4>Royal High School</h4>
+                        <p class="timeline-date">2019 - 2020</p>
+                        <p>During my 10th standard at Royal High School, I focused on strengthening my foundation in all subjects while actively participating in extracurricular activities.</p>
+                        <ul class="achievements">
+                            <li>Participated in quizzes and science exhibitions, gaining exposure to new learning opportunities.</li>
+                            <li>Contributed to the school's science exhibition by presenting a project that showcased innovative concepts in technology.</li>
+                            <li>Developed a strong sense of discipline and teamwork through active involvement in physical activities and sports events.</li>
+                        </ul>
+                        <div class="education-stats">
+                            <span class="education-stat">GPA: 89.00/100.00</span>
+                            <span class="education-stat">AP Scholar</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                   
+                    <div class="project-info">
+                        <h3>Ancient Bot</h3>
+                        <p>A chatbot which provides information about Indian history.</p>
+                        <p>Built using Rasa Framework</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Rasa Framework</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="{{ url_for('static', filename='bot.png') }}" target="_blank" class="demo-btn">
+                                <span>DView</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+               
+                    <div class="project-card">
+                            <div class="project-info">
+                            <h3>Portfoilo</h3>
+                            <p>This portfolio project showcases my ability to create functional and visually appealing web pages</p>
+                            <p>Built using Flask Framework</p>
+                            
+                            <div class="project-tech">
+                                <span class="tech-tag">Flask Framework</span>
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="{{ url_for('static', filename='port.png') }}" target="_blank" class="demo-btn">
+                                    <span>View</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                
+
+                <div class="project-card">
+                    
+                    <div class="project-info">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Fashoz is an online e-commerce platform designed to offer the latest trends in fashion, beauty, and lifestyle.</p>
+                        <p>Features four main categories</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="{{ url_for('static', filename='ecom.png') }}" target="_blank" class="demo-btn">
+                                <span>View</span>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    
+                    <div class="project-info">
+                        <h3>Job Application Form</h3>
+                        <p>A streamlined job application form designed to collect applicant information.</p>
+                        <p>Built with modern web technologies</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="{{ url_for('static', filename='job.png') }}" target="_blank" class="demo-btn">
+                                <span>View</span>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certificates">
+            <h2>Certificates</h2>
+            <div class="certificates-grid">
+                <div class="certificate-card">
+                    <div class="certificate-info">
+                        <h3>Packetprep On Ancient_Bot</h3>
+                        <p>PACKETPREP</p>
+                        <p>July 2024</p>
+                        <a href="{{ url_for('static', filename='packetprep.jfif') }}" target="_blank" class="certificate-link">View Certificate</a>
+                        
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-info">
+                        <h3>Typing(Higher)</h3>
+                        <p>Bharath Technical Institute</p>
+                        <p>October 2024</p>
+                        <a href="{{ url_for('static', filename='typing.jfif') }}" target="_blank" class="certificate-link">View Certificate</a>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-info">
+                        <h3>Communication skills</h3>
+                        <p>Unnatii</p>
+                        <p>November 2024</p>
+                        <a href="{{ url_for('static', filename='unnati.jpg') }}" target="_blank" class="certificate-link">View Certificate</a>
+
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-info">
+                        <h3>MsOffice</h3>
+                        <p>Kakaraparti Bhavanarayana College</p>
+                        <p>June 2023</p>
+                        <a href="{{ url_for('static', filename='msoffice.jfif') }}" target="_blank" class="certificate-link">View Certificate</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:kavyasudha1427@gmail.com" class="no-underline">
+                                <p>kavyasudha1427@gmail.com</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>9381995540</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Andhra Pradesh,India</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-container">
+                    <h3>Connect With Me</h3>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/kavya-sudha-padala-8413712b6/" target="_blank" class="social-link linkedin">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/kavyasudhapadala" target="_blank" class="social-link github">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+        
+    </script>
+</body>
+</html>
